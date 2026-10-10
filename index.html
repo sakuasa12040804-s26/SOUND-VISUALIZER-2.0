@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080611"><title>SOUND VISUALIZER 2.0</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header><div class="logo">〰</div><div><p class="eyebrow">REALTIME AUDIO SYSTEM</p><h1>SOUND <span>VISUALIZER</span></h1></div><b class="version">v2.0</b></header>
+<section class="panel hero"><div class="heading"><div><p class="eyebrow">LIVE FREQUENCY ANALYSIS</p><h2>Audio Spectrum</h2></div><div id="pill" class="pill"><i></i><span id="status">STANDBY</span></div></div>
+<div class="screen"><canvas id="viz" aria-label="音声スペクトラム"></canvas><div class="labels"><span>LOW</span><span>MID</span><span>HIGH</span></div></div>
+<div class="level"><div><p class="eyebrow">INPUT LEVEL</p><strong><span id="level">--</span><small>%</small></strong></div><div class="track"><div id="levelbar"></div></div></div>
+<div class="controls"><button id="toggle">▶ START VISUALIZER</button><button id="reset" disabled>RESET</button></div><p id="hint">STARTを押してマイクへのアクセスを許可してください。</p></section>
+<section class="stats"><article class="panel"><p class="eyebrow">BASS ENERGY</p><strong><span id="bass">0</span><small>%</small></strong><div class="mini"><div id="bassbar"></div></div></article><article class="panel"><p class="eyebrow">MID ENERGY</p><strong class="purple"><span id="mid">0</span><small>%</small></strong><div class="mini"><div id="midbar"></div></div></article><article class="panel"><p class="eyebrow">TREBLE ENERGY</p><strong class="pink"><span id="treble">0</span><small>%</small></strong><div class="mini"><div id="treblebar"></div></div></article></section>
+<footer>● SOUND VISUALIZER / NEON AUDIO LAB<p>マイク入力を視覚化する簡易ツールです。機器や環境によって表示は変わります。</p></footer>
+</main><script src="script.js"></script></body></html>
